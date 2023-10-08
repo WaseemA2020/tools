@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Random Color Generator!</title>
+ <style>
+ h2 {
+font-family: Arial, Helvetica;
+font-size: 100px;
+color: #FFF;
+text-shadow: 0px 0px 11px #333333;
+margin: 0;
+padding: 30px;
+ }
+</style>
+</head>
+<script>
+var button = document.querySelector("#myButton");
+button.addEventListener("mousedown", mousePressed, false);
+button.addEventListener("mouseup", mouseReleased, false);
+button.addEventListener("click", mouseClicked, false);
+function mousePressed(e) {
+    console.log("Mouse is down!");
+}
+function mouseReleased(e) {
+    console.log("Mouse is up!");
+}
+function mouseClicked(e) {
+    console.log("Mouse is clicked!");
+}
+
+</script>
+
+
+ <body style="background-color: rgb(75, 63, 101);">
+ <h2>Random
+<br>Color
+<br>Generator</h2>
+ <script src="js/randomColor.js"></script>
+ <script>
+var bodyElement = document.querySelector("body");
+bodyElement.style.backgroundColor = getRandomColor();
+
+
+ </script>
+
+
+ </body>
+
+</html>
